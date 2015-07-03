@@ -170,6 +170,105 @@ html {
 .block03 {
   height: 1000px;
   background: #fff;
+  padding-top: 80px;
+}
+.block03 h2 {
+  margin-bottom: 90px;
+}
+.block03 .winners {
+  padding: 0;
+  font-size: 0;
+  width: 1200px;
+  line-height: 0;
+  margin: 0 -115px;
+  list-style: none;
+  text-align: center;
+  letter-spacing: -0.3em;
+}
+.block03 .winners li {
+  width: 240px;
+  height: 240px;
+  font-size: 17px;
+  cursor: pointer;
+  position: relative;
+  line-height: 1.411;
+  display: inline-block;
+  letter-spacing: normal;
+}
+.block03 .winners li .winner-image-inner {
+  top: -15px;
+  left: -15px;
+  z-index: 100;
+  width: 640px;
+  height: 350px;
+  display: none;
+  position: absolute;
+}
+.block03 .winners li:hover .winner-image-inner {
+  display: block;
+}
+.block03 .winners .winner-image {
+  width: 349px;
+  height: 349px;
+  position: relative;
+  padding: 17px 16px 16px 15px;
+  background: url("../img/photo_border.png") 0 0 no-repeat;
+}
+.block03 .winners .winner-image img {
+  display: block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.block03 .winners .winner-image .winner-border {
+  top: 17px;
+  left: 15px;
+  width: 348px;
+  height: 349px;
+  position: absolute;
+  background: url("../img/photo_shadow.png") 0 0 no-repeat;
+}
+.block03 .winners .winner-image .winner-text {
+  top: 105px;
+  left: 356px;
+  width: 260px;
+  font-size: 17px;
+  background: #fff;
+  line-height: 24px;
+  padding: 10px 18px;
+  position: absolute;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.block03 .winners .winner-image .winner-text:before {
+  left: -7px;
+  top: 50%;
+  z-index: 50;
+  width: 7px;
+  height: 12px;
+  content: " ";
+  margin-top: -6px;
+  position: absolute;
+  background: url("../img/arrow_left.png") 0 0 no-repeat;
+}
+.block03 .winners .winner-image .winner-text span {
+  display: block;
+}
+.block03 .winners .winner-image .winner-text .winner-name {
+  font-size: 21px;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+.block03 .winners .winner-image .winner-text .winner-number {
+  color: #ffbd03;
+  text-decoration: underline;
+}
+.block03 .winners .winner-image .winner-text .winner-number:hover {
+  text-decoration: none;
 }
 .block04 {
   height: 1000px;
