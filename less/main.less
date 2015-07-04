@@ -79,7 +79,7 @@ html {
 }
 
 .block02 {
-	height: 1000px;
+	height: 800px;
 	padding-top: 80px;
 	background: url("../img/b02_bg.jpg") top center no-repeat;
 
@@ -125,12 +125,11 @@ html {
 }
 
 .block03 {
-	height: 1000px;
 	background: #fff;
-	padding-top: 80px;
+	padding: 90px 0;
 
 	h2 {
-		margin-bottom: 90px;
+		margin-bottom: 80px;
 	}
 
 	.winners {
@@ -153,6 +152,10 @@ html {
 			display: inline-block;
 			letter-spacing: normal;
 
+			> img {
+				opacity: .5;
+			}
+
 			.winner-image-inner {
 				top: -15px;
 				left: -15px;
@@ -166,72 +169,6 @@ html {
 			&:hover {
 				.winner-image-inner {
 					display: block;
-				}
-			}
-		}
-
-		.winner-image {
-			width: 349px;
-			height: 349px;
-			position: relative;
-			padding: 17px 16px 16px 15px;
-			background: url("../img/photo_border.png") 0 0 no-repeat;
-
-			img {
-				display: block;
-				.border-radius(5px;);
-			}
-
-			.winner-border {
-				top: 17px;
-				left: 15px;
-				width: 348px;
-				height: 349px;
-				position: absolute;
-				background: url("../img/photo_shadow.png") 0 0 no-repeat;
-			}
-
-			.winner-text {
-				top: 105px;
-				left: 356px;
-				width: 260px;
-				font-size: 17px;
-				background: #fff;
-				line-height: 24px;
-				padding: 10px 18px;
-				position: absolute;
-				.border-radius(8px);
-				.box-shadow(0px 0px 10px 0px rgba(0, 0, 0, 0.5));
-
-				&:before {
-					left: -7px;
-					top: 50%;
-					z-index: 50;
-					width: 7px;
-					height: 12px;
-					content:  " ";
-					margin-top: -6px;
-					position: absolute;
-					background: url("../img/arrow_left.png") 0 0 no-repeat;
-				}
-
-				span {
-					display: block;
-				}
-
-				.winner-name {
-					font-size: 21px;
-					line-height: 30px;
-					margin-bottom: 5px;
-				}
-
-				.winner-number {
-					color: #ffbd03;
-					text-decoration: underline;
-
-					&:hover {
-						text-decoration: none;
-					}
 				}
 			}
 		}
@@ -409,70 +346,7 @@ html {
 		}
 
 		.winner-image {
-			width: 349px;
-			height: 349px;
-			position: relative;
 			margin-bottom: 70px;
-			padding: 17px 16px 16px 15px;
-			background: url("../img/photo_border.png") 0 0 no-repeat;
-
-			img {
-				display: block;
-				.border-radius(5px;);
-			}
-
-			.winner-border {
-				top: 17px;
-				left: 15px;
-				width: 348px;
-				height: 349px;
-				position: absolute;
-				background: url("../img/photo_shadow.png") 0 0 no-repeat;
-			}
-
-			.winner-text {
-				top: 105px;
-				left: 356px;
-				width: 260px;
-				font-size: 17px;
-				background: #fff;
-				line-height: 24px;
-				padding: 10px 18px;
-				position: absolute;
-				.border-radius(8px);
-				.box-shadow(0px 0px 10px 0px rgba(0, 0, 0, 0.5));
-
-				&:before {
-					left: -7px;
-					top: 50%;
-					z-index: 50;
-					width: 7px;
-					height: 12px;
-					content:  " ";
-					margin-top: -6px;
-					position: absolute;
-					background: url("../img/arrow_left.png") 0 0 no-repeat;
-				}
-
-				span {
-					display: block;
-				}
-
-				.winner-name {
-					font-size: 21px;
-					line-height: 30px;
-					margin-bottom: 5px;
-				}
-
-				.winner-number {
-					color: #ffbd03;
-					text-decoration: underline;
-
-					&:hover {
-						text-decoration: none;
-					}
-				}
-			}
 		}
 
 		h3 {
@@ -615,6 +489,73 @@ html {
 	}
 }
 
+.winner-image {
+	width: 349px;
+	height: 349px;
+	position: relative;
+	padding: 17px 16px 16px 15px;
+	background: url("../img/photo_border.png") 0 0 no-repeat;
+
+	img {
+		width: 317px;
+		height: 317px;
+		display: block;
+		.border-radius(5px;);
+	}
+
+	.winner-border {
+		top: 17px;
+		left: 15px;
+		width: 348px;
+		height: 349px;
+		position: absolute;
+		background: url("../img/photo_shadow.png") 0 0 no-repeat;
+	}
+
+	.winner-text {
+		top: 105px;
+		left: 356px;
+		width: 260px;
+		font-size: 17px;
+		background: #fff;
+		line-height: 24px;
+		padding: 10px 18px;
+		position: absolute;
+		.border-radius(8px);
+		.box-shadow(0px 0px 10px 0px rgba(0, 0, 0, 0.5));
+
+		&:before {
+			left: -7px;
+			top: 50%;
+			z-index: 50;
+			width: 7px;
+			height: 12px;
+			content:  " ";
+			margin-top: -6px;
+			position: absolute;
+			background: url("../img/arrow_left.png") 0 0 no-repeat;
+		}
+
+		span {
+			display: block;
+		}
+
+		.winner-name {
+			font-size: 21px;
+			line-height: 30px;
+			margin-bottom: 5px;
+		}
+
+		.winner-number {
+			color: #ffbd03;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
 
 .btn {
 	margin: 0;

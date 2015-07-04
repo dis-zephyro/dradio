@@ -34,3 +34,8 @@ $('.winner-nav.next').click(function(){
 });
 
 //---
+
+
+$(".winner-number").fancybox({
+    "padding" : 0
+});
