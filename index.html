@@ -25,7 +25,7 @@
                 <div class="logo"></div>
                 <div class="tel">Контактный телефон:<span>41-41-41</span></div>
                 <div class="text-center">
-                    <a href="#" class="btn btn-arrow">Подробности акции</a>
+                    <a href="#text-box" class="btn btn-arrow btn-text">Подробности акции</a>
                 </div>
             </div>
         </section>
@@ -39,7 +39,7 @@
                     <li class="item3">Получи<br/><strong>1000 рублей</strong><br/>за призовую купюру</li>
                 </ul>
                 <div class="text-center">
-                    <a href="#" class="btn">Подробности акции</a>
+                    <a href="#text-box" class="btn btn-text">Подробности акции</a>
                 </div>
             </div>
         </section>
@@ -144,7 +144,7 @@
                     <span class="partners-nav next"></span>
                 </div>
                 <div class="text-center">
-                    <a href="#" class="btn">Стать партнером</a>
+                    <a href="#text-box" class="btn btn-text">Стать партнером</a>
                 </div>
             </div>
         </section>
@@ -154,10 +154,14 @@
                 <div class="text1">Призы от партнеров!</div>
                 <h2>Все просто!</h2>
                 <div class="text2">В <strong>любой момент времени</strong>  в эфире вы можете услышать<br/><strong>специальный звуковой сигнал</strong></div>
-                <a href="#" class="play"></a>
+                <div class="play"></div>
+                <div class="stop"></div>
                 <div class="text3">Дозвонись первым по номеру</div>
                 <div class="tel">41-41-41</div>
                 <h2>И стань победителем!!!</h2>
+                <audio>
+                    <source src="assets/audio/001.ogg" type="audio/ogg; codecs=vorbis">.
+                </audio>
             </div>
         </section>
         <section class="block06">
@@ -206,7 +210,7 @@
                     <span class="winner-nav next"></span>
                 </div>
                 <div class="text-center">
-                    <a href="#" class="btn">Новая акция</a>
+                    <a href="#text-box" class="btn btn-text">Новая акция</a>
                 </div>
             </div>
         </section>
@@ -236,6 +240,12 @@
                 <a href="#" class="dev_logo ir"></a>
             </div>
         </footer>
+
+        <div class="hidden">
+            <div class="action-text" id="text-box">
+
+            </div>
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

@@ -39,3 +39,42 @@ $('.winner-nav.next').click(function(){
 $(".winner-number").fancybox({
     "padding" : 0
 });
+
+$(".btn-text").fancybox({
+    "maxWidth": 1000,
+    "padding" : 0
+});
+
+
+var audio = document.getElementById("player");
+
+$('.play').click(function(){
+    audio.play();
+    $('.play').hide();
+    $('.stop').show();
+});
+
+$('.stop').click(function(){
+    audio.pause();
+    $('.stop').hide();
+    $('.play').show();
+});
+
+/*
+var audio = new Audio();
+audio.src = './assets/audio/001.ogg';
+
+$('.play').click(function(){
+    audio.play();
+    $('.play').hide();
+    $('.stop').show();
+});
+
+$('.stop').click(function(){
+    audio.pause();
+    $('.stop').hide();
+    $('.play').show();
+});
+
+
+*/
